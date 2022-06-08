@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a:hover {
+    color: lightcoral;
+}
+
+.active {
+    width: 50%;
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    /* background-color: #55007d; */
+    font-family: 'Allura';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./image/header.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    height: 10vh;
+    bottom: 0px;
+    width: 100%;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer-text {
+    margin-right: 30px;
+    font-family: 'Inter';
+    font-style: italic;
+}
+
+.logo2 {
+    font-family: 'Inter';
+    font-style: italic;
+    font-size: 5vmin;
+    color: white;
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.75);
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background: rgba(95, 91, 91, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    font-size: 5vmin;
+}
+
+.dot {
+    font-size: 1em;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 10%;
+    visibility: hidden;
+}
+
+.img-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.gibson,
+.fender {
+    margin-left: 6vw;
+    width: 18%;
+}
+
+.jackson {
+    width: 30%;
+}
+
+.line {
+    margin-top: 5px;
+    width: 50%;
+    background-color: whitesmoke;
+    height: 2px;
+}
+
+/* Mobile device */
+@media only screen and (max-width: 850px) {
+    .navbar {
+        padding: 0;
+        width: 100vw;
+    }
+
+    .menu-btn {
+        visibility: visible;
+    }
+
+    .dot {
+        transition: all 0.5s ease;
+    }
+
+    .logo2 {
+        position: absolute;
+        /* height: 80vh; */
+        left: 0px;
+        top: 30px;
+        width: 100%;
+        text-align: center;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+        justify-content: center;
+        color: whitesmoke;
+        background: rgba(95, 91, 91, 0.5);
+        backdrop-filter: blur(5px);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .gibson,
+    .fender {
+        margin-left: 10vw;
+        width: 30%;
+    }
+
+    .jackson {
+        width: 50%;
+    }
+}
